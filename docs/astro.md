@@ -11,3 +11,7 @@ layout:
 
 Error pages, found in `astro/pages`, can be copied as-is and will be used
 automatically.
+
+## Components
+
+- `Video` - Embed a YouTube video. Styled with the `video` CSS class.
