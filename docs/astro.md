@@ -9,8 +9,12 @@ layout:
 - Provides the `sr-only` CSS class that makes text visible only to screen
   readers.
 
-Error pages, found in `astro/pages`, can be copied as-is and will be used
-automatically.
+The following optional files are included and may be copied as-is:
+
+- `pages/404.astro` - Basic 404 page that inherits the default layout and links
+  to the homepage.
+- `public/_headers` - Cache all assets for 7 days if using Cloudflare Pages.
+  Browsers will revalidate the requested `*.html` file.
 
 ## Components
 
