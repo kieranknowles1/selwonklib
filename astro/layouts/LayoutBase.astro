@@ -4,6 +4,12 @@ import type { ImageMetadata } from 'astro'
 interface Props {
     favicon?: ImageMetadata,
     title: string,
+    /**
+     * @deprecated Using Google Fonts without consent may violate GDPR.
+     * See: https://www.cookieyes.com/documentation/google-fonts-and-gdpr/
+     *
+     * Host fonts locally instead.
+     */
     googleFonts?: string[]
 }
 
@@ -12,6 +18,10 @@ const {
     title,
     googleFonts
 } = Astro.props
+
+if (googleFonts !== undefined) {
+  console.warn('Using Google Fonts is deprecated as it may violate GDPR.');
+}
 
 import '../styles/base.css'
 ---
