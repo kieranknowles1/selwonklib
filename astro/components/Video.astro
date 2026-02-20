@@ -27,7 +27,7 @@ const {
 ---
 <video
   controls
-  class="video" width={Math.round(height * aspectRatio)} height={height}
+  class="video" style={{maxHeight: `${height}px`, aspectRatio: aspectRatio}}
 >
   <source src={url} />
 </video>
