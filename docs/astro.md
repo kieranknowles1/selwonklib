@@ -23,3 +23,4 @@ The following optional files are included and may be copied as-is:
 - `FancyLink` - Link with icon instead in the place of the bullet point. Place
   in a `ul.links-list`
 - `Video` - Embed a YouTube video. Styled with the `video` CSS class.
+- `LinkGrid` - Grid of links

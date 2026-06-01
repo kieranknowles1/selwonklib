@@ -1,0 +1,20 @@
+.link-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  margin: 0 auto;
+  max-width: 64rem;
+  padding: 1rem 1rem 3rem;
+}
+
+.link-grid a {
+  border: 1px solid #d7e7eb;
+  border-radius: 8px;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.link-grid a {
+  font-weight: 700;
+  padding: 1rem;
+}

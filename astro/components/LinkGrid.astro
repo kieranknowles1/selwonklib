@@ -1,0 +1,22 @@
+---
+import '../styles/LinkGrid.css'
+
+interface Link {
+    path: string,
+    title: string,
+}
+
+interface Props {
+    links: Link[]
+}
+
+const { links } = Astro.props
+
+---
+<section class='link-grid'>
+{links.map((item) => (
+    <a href={item.path}>
+    <span>{item.title}</span>
+    </a>
+))}
+</section>
