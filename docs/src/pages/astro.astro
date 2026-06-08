@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Astro" currentPath={Astro.url.pathname}>
+  <h1>Astro</h1>
+
+  <p>
+    Reusable Astro components, layouts, error pages, and stylesheets. Derive a
+    project's root layout from <code>astro/layouts/LayoutBase.astro</code> to
+    get started. This layout:
+  </p>
+
+  <ul>
+    <li>Sets all text to use Arial by default.</li>
+    <li>
+      Provides the <code>sr-only</code> CSS class that makes text visible only to
+      screen readers.
+    </li>
+  </ul>
+
+  <p>The following optional files are included and may be copied as-is:</p>
+
+  <ul>
+    <li>
+      <code>pages/404.astro</code> - Basic 404 page that inherits the default
+      layout and links to the homepage.
+    </li>
+    <li>
+      <code>public/_headers</code> - Cache all assets for 7 days if using
+      Cloudflare Pages. Browsers will revalidate the requested <code>*.html</code>
+      file.
+    </li>
+  </ul>
+
+  <h2>Components</h2>
+
+  <!-- TODO: Switch docs to a static site from markdown to show everything visually -->
+
+  <ul>
+    <li>
+      <code>FancyLink</code> - Link with icon instead in the place of the bullet
+      point. Place in a <code>ul.links-list</code>
+    </li>
+    <li><code>Video</code> - Embed a self-hosted video. Styled with the <code>video</code> CSS class.</li>
+    <li><code>LinkGrid</code> - Grid of links</li>
+  </ul>
+</Layout>

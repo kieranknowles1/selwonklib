@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Workflows" currentPath={Astro.url.pathname}>
+  <h1>Workflows</h1>
+
+  <p>
+    Reusable templates for common GitHub workflows. Copy-paste them into a new
+    project and make changes where noted.
+  </p>
+
+  <h2>astro-cloudflare</h2>
+
+  <p>Deploy a static Astro site to Cloudflare Pages. Takes the following inputs:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>PROJECT_NAME</code></td>
+        <td>Workflow</td>
+        <td>
+          Cloudflare Pages project name. The subdomain of <code>pages.dev</code>
+          your site uses.
+        </td>
+      </tr>
+      <tr>
+        <td><code>CLOUDFLARE_API_TOKEN</code></td>
+        <td>Repository secrets</td>
+        <td>
+          Cloudflare API token with <code>Cloudflare Pages:Edit</code>
+          permissions.
+        </td>
+      </tr>
+      <tr>
+        <td><code>CLOUDFLARE_ACCOUNT_ID</code></td>
+        <td>Repository secrets</td>
+        <td>Your Cloudflare account ID. Found on the dashboard.</td>
+      </tr>
+    </tbody>
+  </table>
+</Layout>

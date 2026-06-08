@@ -1,0 +1,36 @@
+---
+import LayoutBase from '../../../astro/layouts/LayoutBase.astro';
+import '../styles/site.css';
+
+import NavEntry from '../components/NavEntry.astro'
+
+interface Props {
+  title: string;
+  currentPath: string;
+}
+
+const { title, currentPath } = Astro.props;
+
+const navItems = [
+  { href: '/', name: 'Introduction' },
+  { href: '/astro/', name: 'Astro' },
+  { href: '/workflows/', name: 'Workflows' }
+];
+
+const normalizedPath = currentPath.endsWith('/') ? currentPath : `${currentPath}/`;
+---
+<LayoutBase title={title}>
+  <nav>
+    <a href="/">SelwonkLib</a>
+    <nav>
+      <ul>
+        {navItems.map(e => {
+          return <NavEntry {...e}/>
+        })}
+      </ul>
+    </nav>
+  </nav>
+  <main>
+    <slot />
+  </main>
+</LayoutBase>
