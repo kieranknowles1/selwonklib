@@ -1,5 +1,7 @@
 # Nix build outputs
 result
 
-# mdBook output
-/docs/book/
+# Astro output
+/docs/.astro/
+/docs/dist/
+/docs/node_modules/
