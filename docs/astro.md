@@ -4,7 +4,6 @@ Reusable Astro components, layouts, error pages, and stylesheets. Derive a
 project's root layout from `astro/layouts/LayoutBase.astro` to get started. This
 layout:
 
-- Allows for the inclusion of [Google Fonts](https://fonts.google.com) by name.
 - Sets all text to use Arial by default.
 - Provides the `sr-only` CSS class that makes text visible only to screen
   readers.
@@ -22,5 +21,5 @@ The following optional files are included and may be copied as-is:
 
 - `FancyLink` - Link with icon instead in the place of the bullet point. Place
   in a `ul.links-list`
-- `Video` - Embed a YouTube video. Styled with the `video` CSS class.
+- `Video` - Embed a self-hosted video. Styled with the `video` CSS class.
 - `LinkGrid` - Grid of links
