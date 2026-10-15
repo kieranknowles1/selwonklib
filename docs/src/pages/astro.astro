@@ -1,4 +1,6 @@
 ---
+import FancyLink from '../../../astro/components/FancyLink.astro';
+import Video from '../../../astro/components/Video.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Astro" currentPath={Astro.url.pathname}>
@@ -34,14 +36,21 @@ import Layout from '../layouts/Layout.astro';
 
   <h2>Components</h2>
 
-  <!-- TODO: Switch docs to a static site from markdown to show everything visually -->
+  <h3><code>FancyLink</code></h3>
+  <p>
+    A link with an icon in place of the bullet, indended for use within a <code>ul.links-list</code>
+  </p>
 
-  <ul>
-    <li>
-      <code>FancyLink</code> - Link with icon instead in the place of the bullet
-      point. Place in a <code>ul.links-list</code>
-    </li>
-    <li><code>Video</code> - Embed a self-hosted video. Styled with the <code>video</code> CSS class.</li>
-    <li><code>LinkGrid</code> - Grid of links</li>
+  <p>
+    Requires the <a href="https://github.com/natemoo-re/astro-icon"></a> package.
+  </p>
+
+  <ul class="links-list">
+    <FancyLink name="GitHub" icon="cib:github" href="https://github.com/kieranknowles1/selwonklib">GitHub</FancyLink>
+    <FancyLink name="Git" icon="cib:git" href="https://git.selwonk.uk/selwonksoftware/selwonklib">Forgejo</FancyLink>
   </ul>
+
+  <h3><code>Video</code></h3>
+  <p>Embed a self-hosted video, style using the <code>video</code> CSS class.</p>
+  <Video url='https://r2.selwonk.uk/blitzbox.webm' />
 </Layout>
