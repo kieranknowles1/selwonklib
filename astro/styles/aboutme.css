@@ -1,0 +1,8 @@
+.aboutme {
+  border: 1px solid var(--border);
+  border-radius: 0.5em;
+  padding: 0.15em;
+}
+.aboutme p {
+  margin: 0;
+}

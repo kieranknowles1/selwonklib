@@ -35,11 +35,21 @@ import Layout from '../layouts/Layout.astro';
     </li>
   </ul>
 
+  <h2>Styling</h2>
+  Components include built-in styling, and may be customised based on their CSS class.
+
+  For consistency, colour schemes are defined using variables. The following
+  standardised names are used, but not defined by default:
+  <ul>
+    <li><code>--border</code></li> Default colour for borders. Used against the primary background colour.
+    <li><code>--muted</code></li> Secondary colour for darker text.
+  </ul>
+
   <h2>Components</h2>
 
   <h3><code>AboutMe</code></h3>
   <p>
-    Common banner to be placed on any site I maintain.
+    Common banner to be placed on any site I maintain. Style using the <code>aboutme</code> class.
   </p>
   <AboutMe />
 
